@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhwani Player</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li class="brand">🎧 Dhwani</li>
+        <li><a href="index.html" style="color:white;text-decoration:none;">Home</a></li>
+        <li><a href="about.html" style="color:white;text-decoration:none;">About</a></li>
+        <li><a href="login.html" style="color:white;text-decoration:none;">Login</a></li>
+        <li><a href="signup.html" style="color:white;text-decoration:none;">Signup</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="left">
+        <h2>My Playlist</h2>
+        <div class="songItemContainer">
+            <div class="songItem"><img><span class="songName"></span><i id="0" class="songItemPlay fa-solid fa-play"></i></div>
+            <div class="songItem"><img><span class="songName"></span><i id="1" class="songItemPlay fa-solid fa-play"></i></div>
+            <div class="songItem"><img><span class="songName"></span><i id="2" class="songItemPlay fa-solid fa-play"></i></div>
+            <div class="songItem"><img><span class="songName"></span><i id="3" class="songItemPlay fa-solid fa-play"></i></div>
+            <div class="songItem"><img><span class="songName"></span><i id="4" class="songItemPlay fa-solid fa-play"></i></div>
+            <div class="songItem"><img><span class="songName"></span><i id="5" class="songItemPlay fa-solid fa-play"></i></div>
+            <div class="songItem"><img><span class="songName"></span><i id="6" class="songItemPlay fa-solid fa-play"></i></div>
+            <div class="songItem"><img><span class="songName"></span><i id="7" class="songItemPlay fa-solid fa-play"></i></div>
+            <div class="songItem"><img><span class="songName"></span><i id="8" class="songItemPlay fa-solid fa-play"></i></div>
+        </div>
+    </div>
+
+    <div class="right">
+        <img id="cover" src="covers/1.jpg">
+        <h3 id="masterSongName">Select a song</h3>
+    </div>
+</div>
+
+<!-- PLAYER -->
+<div class="bottom">
+    <input type="range" id="progressBar" value="0">
+    <div class="controls">
+        <i class="fa-solid fa-backward" id="previous"></i>
+        <i class="fa-solid fa-play" id="masterPlay"></i>
+        <i class="fa-solid fa-forward" id="next"></i>
+    </div>
+    <div class="volume">
+        🔊 <input type="range" id="volume" min="0" max="1" step="0.1">
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
